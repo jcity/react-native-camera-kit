@@ -154,6 +154,7 @@ public class CameraViewManager extends SimpleViewManager<CameraView> {
         } else if(camera != null){
             releaseCamera();
             camera = null;
+            currentCamera = 0;
         }
         if (cameraViews.isEmpty()) {
             clearOrientationListener();
